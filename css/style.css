@@ -7,18 +7,19 @@ body{
     justify-content: center;
     align-items: flex-start;
 }
-.container{
+.container1{
     display:flex;
     flex-wrap: wrap;
     flex: 0 1 20%;
     min-width:400px;
 }
-
-.buttons,.result{
+.result{
     display: flex;
-    flex-wrap: wrap;
-    flex: 0 1 100%;
+    flex-direction: row;
+    flex-grow: 1;
+
 }
+
 .result{
     height: 50px;
     border: 1px solid black;
@@ -29,6 +30,28 @@ body{
     color: #000;
     padding:0 10px;
 }
+.buttons{
+    display: flex;
+    
+    flex: 0 1 100%;
+}
+.operators{
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 100%;
+}
+.container2{
+    display:flex;
+    flex-wrap: wrap;
+    flex: 0 1 20%;
+    min-width:400px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
 .button{
     display:flex;
     flex: 0 1 25%;
@@ -46,9 +69,11 @@ body{
     border-left: 1px solid black;
 }
 .button.equal {
+    flex-grow: 1;
     background: rgb(74, 74, 146);
     color: white;
 }
 .button.number,.resetBtn {
     background: whitesmoke;
 }
+
