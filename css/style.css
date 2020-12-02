@@ -12,15 +12,12 @@ body{
     flex-wrap: wrap;
     flex: 0 1 20%;
     min-width:400px;
+    margin-top: 30px;
 }
 .result{
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-
-}
-
-.result{
     height: 75px;
     border: 1px solid black;
     justify-content: flex-end;
@@ -39,11 +36,6 @@ body{
     padding-left: 10px;
 }
 
-.buttons{
-    display: flex;
-    
-    flex: 0 1 100%;
-}
 .operators{
     display: flex;
     flex-direction: row;
@@ -68,20 +60,21 @@ body{
     align-items: center;
     height: 50px;
     border: 1px solid black;
-    border-top:none;
-    border-left:none;
     cursor: pointer;
     background: -webkit-linear-gradient(top,#d2d2d2,#ddd);
     font-size:2em;
 }
-.button:nth-child(4n+1){
-    border-left: 1px solid black;
-}
+
 .button.equal {
     flex-grow: 1;
+}
+.equal-sign.operator {
+    flex-grow: 1;
+    height: 100%;
     background: rgb(74, 74, 146);
     color: white;
 }
+
 .button.number,.resetBtn {
     background: whitesmoke;
 }
